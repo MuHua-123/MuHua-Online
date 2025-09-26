@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="OnlineDiscoveryWindow" src="project://database/Assets/UI%20Toolkit/GameWindow/StandardWindow/OnlineDiscoveryWindow.uxml?fileID=9197481963319205126&amp;guid=1b096bfe464fa5640863dcc82af5a6d5&amp;type=3#OnlineDiscoveryWindow" />
+    <ui:Template name="ShortcutMenu" src="project://database/Assets/UI%20Toolkit/GamePopup/ShortcutMenu/ShortcutMenu.uxml?fileID=9197481963319205126&amp;guid=531a74f84d51b5d49a048079629e13e0&amp;type=3#ShortcutMenu" />
+    <Style src="project://database/Assets/UI%20Toolkit/Document/Document.uss?fileID=7433441132597879392&amp;guid=83a295741b477e64d83449064682e705&amp;type=3#Document" />
+    <ui:VisualElement name="Window" picking-mode="Ignore" class="document-page" style="flex-grow: 1;">
+        <ui:Instance template="OnlineDiscoveryWindow" name="OnlineDiscoveryWindow" class="document-page document-page-hide" style="background-color: rgba(0, 0, 0, 0.4); align-items: center; justify-content: center;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Popup" picking-mode="Ignore" class="document-page" style="flex-grow: 1;">
+        <ui:Instance template="ShortcutMenu" name="ShortcutMenu" picking-mode="Ignore" class="document-page" />
+    </ui:VisualElement>
+</ui:UXML>

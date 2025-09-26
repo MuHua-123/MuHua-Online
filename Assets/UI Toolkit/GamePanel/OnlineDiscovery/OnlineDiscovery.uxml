@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ServerTemplate" src="project://database/Assets/UI%20Toolkit/GamePanel/OnlineDiscovery/ServerTemplate.uxml?fileID=9197481963319205126&amp;guid=7104fd9936cb4ba4d894ee633f06c648&amp;type=3#ServerTemplate" />
+    <Style src="project://database/Assets/UI%20Toolkit/GamePanel/OnlineDiscovery/OnlineDiscovery.uss?fileID=7433441132597879392&amp;guid=e4d502a334ec7bd46a9a87aa7fade94f&amp;type=3#OnlineDiscovery" />
+    <ui:VisualElement name="ScrollView" class="scrollview">
+        <ui:VisualElement name="Viewport" class="scrollview-viewport" style="margin-right: 0; margin-bottom: 0; margin-top: 0; margin-left: 0;">
+            <ui:VisualElement name="Container" class="scrollview-container">
+                <ui:Instance template="ServerTemplate" name="ServerTemplate" />
+                <ui:Instance template="ServerTemplate" name="ServerTemplate" />
+                <ui:Instance template="ServerTemplate" name="ServerTemplate" />
+                <ui:Instance template="ServerTemplate" name="ServerTemplate" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ScrollerHorizontal" class="scroller-horizontal scrollview-horizontal-scroller" style="display: none;">
+            <ui:VisualElement name="Dragger" class="scroller-horizontal-dragger scrollview-horizontal-scroller-dragger" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ScrollerVertical" class="scroller-vertical scrollview-vertical-scroller" style="display: none;">
+            <ui:VisualElement name="Dragger" class="scroller-vertical-dragger scrollview-vertical-scroller-dragger" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
