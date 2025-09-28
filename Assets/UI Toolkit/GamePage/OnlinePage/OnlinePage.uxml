@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="OnlineDiscovery" src="project://database/Assets/UI%20Toolkit/GamePanel/OnlineDiscovery/OnlineDiscovery.uxml?fileID=9197481963319205126&amp;guid=9bab74ef861443942876b6648a9eda49&amp;type=3#OnlineDiscovery" />
+    <Style src="project://database/Assets/UI%20Toolkit/GamePage/OnlinePage/OnlinePage.uss?fileID=7433441132597879392&amp;guid=68720a54cb46db849adc27f6b5725d47&amp;type=3#OnlinePage" />
+    <ui:VisualElement style="flex-grow: 1; align-items: center; justify-content: space-around; background-color: rgba(0, 0, 0, 0.4);">
+        <ui:Instance template="OnlineDiscovery" name="OnlineDiscovery" style="width: 400px; height: 300px;" />
+    </ui:VisualElement>
+</ui:UXML>

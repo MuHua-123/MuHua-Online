@@ -18,9 +18,9 @@ public class UIOnlineDiscovery : ModuleUIPanel {
 	public VisualElement ScrollView => Q<VisualElement>("ScrollView");
 
 	public UIOnlineDiscovery(VisualElement element, VisualElement canvas, VisualTreeAsset templateAsset) : base(element) {
-		ModuleUI.AddControl(items);
 		items = new UIScrollViewListV<UIItem, OnlineDiscoveryResponse>(ScrollView, canvas, templateAsset,
 		(data, element) => new UIItem(data, element, this));
+		ModuleUI.AddControl(items);
 
 		OnlineDiscovery<OnlineDiscoveryBroadcast, OnlineDiscoveryResponse>.OnServerFound += OnlineDiscovery_OnServerFound;
 	}

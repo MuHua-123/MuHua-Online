@@ -31,6 +31,7 @@ public class ModuleUI : ModuleUISingle<ModuleUI> {
 	}
 	/// <summary> 添加控件 </summary>
 	public static void AddControl(UIControl control) {
+		Debug.Log(control);
 		controls.Add(control);
 	}
 	/// <summary> 移除控件 </summary>
@@ -52,6 +53,6 @@ public class ModuleUI : ModuleUISingle<ModuleUI> {
 public enum Page {
 	/// <summary> 无 </summary>
 	None,
-	/// <summary> 背包 </summary>
-	Backpack,
+	/// <summary> 联机 </summary>
+	Online,
 }

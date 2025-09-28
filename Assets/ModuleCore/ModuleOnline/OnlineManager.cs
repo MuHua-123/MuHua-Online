@@ -25,7 +25,7 @@ public class OnlineManager : ModuleSingle<OnlineManager> {
 	private string localhost = "127.0.0.1";
 	private string defaultPort = "5000";
 
-	protected override void Awake() => NoReplace();
+	protected override void Awake() => NoReplace(false);
 
 	/// <summary> 启动服务器模式 </summary>
 	public void StartServer() => StartServer(localhost, defaultPort);
